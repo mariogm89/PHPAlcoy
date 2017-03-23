@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="IceWeasel">
+	<meta name="description" content="Navegador IceWeasel">
+	<meta name="keywords" content="Iceweasel, navegador, web, google, buscador, browser">
+	<title>Registrate como usuario en IceWeasel</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<img src="logo.png" alt="Logo de IceWeasel">
+		<h1>IceWeasel, navegador totalmente libre basado en Mozilla Firefox</h1>
+	</header>
+	<main>
+		<img src="logo.png" alt="Logo de IceWeasel">
+		<p>El navegador libre</p>
+		<form action="ejemplo.htm" method="POST">
+			<table>
+				<thead>
+					<th colspan="2">Introduce tus datos</th>
+				</thead>
+				<tr>
+					<td class="tabletitle"><label for="name">Nombre:</label></td>
+					<td><input type="text" name="name" required></td>
+				</tr>
+				<tr>
+					<td class="tabletitle"><label for="surname">Apellidos:</label></td>
+					<td><input type="text" name="surname" required></td>
+				</tr>
+				<tr>
+					<td class="tabletitle"><label for="mail">Email:</label></td>
+					<td><input type="text" name="mail" required></td>
+				</tr>
+				<tr>
+					<td class="tabletitle"><label for="phone">Teléfono:</label></td>
+					<td><input type="tel" name="phone" required></td>
+				</tr>
+				<tr>
+					<td class="tabletitle"><label for="browser">¿Qué otros navegadores utilizas?</label></td>
+					<td><select multiple="" size="4" name="browser" required>
+							<option value="Chromium" selected>Chromium</option>
+							<option value="Firefox">Firefox</option>
+							<option value="IE">Internet Explorer</option>
+							<option value="Opera">Opera</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="tabletitle"><label for="coment">Danos tu opinión sobre IceWeasel:</label></td>
+					<td><textarea rows="4" cols="30" name="coment"></textarea></td>
+				</tr>
+				<tr>
+					<td class="button">
+						<input type="reset" value="Borrar">
+					</td>
+					<td>
+						<input type="submit" value="Enviar">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</main>
+	<aside>
+		<h2>Últimas noticias</h2>
+		<section>Liberada nueva versión de Debian Jessie 8.1</section>
+		<section>Opera Browser añade nuevos elementos de HTML5 y CSS3</section>
+	</aside>
+	<footer>
+		<a href="www.google.es">Enlace 1</a>
+		<a href="www.facebook.com">Enlace 2</a>
+	</footer>
+</body>
+</html>
