@@ -1,0 +1,44 @@
+{
+	"objectid" : "phonebook",
+	"owner" : {
+		"objectid" : "contact1",
+		"phone" : "123456789",
+		"name" : "Paco",
+		"title" : "hola",
+		"age" : 46,
+		"address" : {
+			"objectid" : "adress",
+			"street" : "calle falsa 123",
+			"city" : "Springfield",
+			"state": "USA"
+		}
+	} ,
+	"contacts" : [
+		{
+			"objectid" : "contact2",
+			"phone" : "123456788",
+			"name" : "Francisco",
+			"title" : "hola2",
+			"age" : 18,
+			"address" : {
+				"objectid" : "adress",
+				"street" : "Evergreen Terrace 768",
+				"city" : "Springfield",
+				"state": "USA"
+		}
+	},
+		{
+			"objectid" : "contact3",
+			"phone" : "123456787",
+			"name" : "Paca",
+			"title" : "hola3",
+			"age" : 83,
+			"address" : {
+				"objectid" : "adress",
+				"street" : "Evergreen Terrace 1000",
+				"city" : "Springfield",
+				"state": "USA"
+		}
+	}
+	]
+}

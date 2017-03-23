@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa suscipit velit assumenda beatae libero animi consectetur consequuntur id. Esse, excepturi.</p>
+	<p>Laboriosam, numquam, nemo? Ducimus id hic, aperiam sit tenetur aliquid, in minima blanditiis error illo animi, recusandae distinctio eos esse.</p>
+	<p>Ea, labore! Repellat tempora facilis voluptatem distinctio voluptate, soluta illum dicta cumque reiciendis culpa consectetur? Error quis non dolorem, consectetur?</p>
+	<p>Porro amet sunt alias cupiditate, obcaecati asperiores quas tempore voluptatem rem explicabo perferendis inventore, officia. Similique veritatis sit deleniti, vero!</p>
+
+	<script type="text/javascript">
+		// .appendChild('<p></p>')
+		// document.getElementsByTagName('p');
+		var paragraphs = document.getElementsByTagName('p');
+		// alert(paragraphs);
+		for(i=0; i < paragraphs.length; i++){
+			alert(paragraphs[i].textContent);
+		}
+		var textuser = prompt("Introduce texto");
+		var newp = document.createElement('p');
+		var text = document.createTextNode(textuser);
+		newp.appendChild(text);
+		document.body.appendChild(newp);
+	</script>
+</body>
+</html>

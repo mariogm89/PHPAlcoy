@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        function loadXMLdoc(){
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                    var agenda = JSON.parse(xmlhttp.response);
+                    document.getElementById("name");
+                    document.getElementById("phone");
+                }
+            }
+            xmlhttp.open("GET","ajax.json",true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Usuario: <input id = "name" type = "text" name = "user">
+        <br>
+        Teléfono: <input id = "phone" type = "text" name = "phone">
+        <br>
+    </form>
+        <button type="button" onclick="loadXMLdoc()">Enviar</button>
+</body>
+</html>

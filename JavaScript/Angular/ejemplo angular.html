@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+</head>
+<body>
+    <input type="text" name="nombre" ng-model="name">
+    <p>Hello {{name}}!</p> 
+    <form>
+        <input type="text" name="username" placeholder="Nombre"><br>
+        <input type="text" name="surname" placeholder="Apellido"><br>
+        <input type="radio" name="gender" value="male" ng-checked='true' ng-model="dato"> Hombre<br> <!-- ng-init="gender='male'" funciona igual para checkear el botón en vez de ng-checked-->
+        <input type="radio" name="gender" value="female" ng-model="dato"> Mujer<br>
+        <input type="radio" name="gender" value="other" ng-model="dato"> Otro 
+        <div ng-show=" dato == 'other' "><input type="text" name="other" placeholder="Escribe otro sexo"></div>
+    </form>
+</body>
+</html>

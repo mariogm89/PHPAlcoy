@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <style type="text/css">
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="text1" id= "text1" value="Texto1">
+    <input type="text" name="text2" id= "text2" value="Texto2">
+    <input type="text" name="text3" id= "text3" value="Texto3">
+    <script>
+        var caja = $("input"); // crea una variable caja para los input, todos los del documento
+        caja.each( // el parámetro each se utiliza para hacer "algo" en cada uno de los objetos llamados en la variable, en este caso cada uno de los inputs
+            function(index){ // esta función llama al nombre de la función ya creada abajo
+                $(this).focus(addRedClass);
+                $(this).blur(removeRedClass);
+            }
+        )
+        function addRedClass(){ // crea una función que ya hemos llamado anteriormente para que inicialice (focus) el añadir la clase al input seleccionado
+            $(this).addClass("red");
+        }
+        function removeRedClass(){ // lo mismo que el anterior, pero en este caso es para cuando deje de estar activo
+            $(this).removeClass("red");
+        }
+
+    </script>
+</body>
+</html>

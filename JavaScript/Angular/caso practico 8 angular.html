@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Caso práctico 8 Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+</head>
+<body>
+    <div>I have 10 friends. They are: <input type="text" name="box" placeholder="filter friends" ng-model="searchText.$"></div>
+    <div>Do you want to search by name or age?</div>
+    <div>Search by name: <input type="text" name="box2" placeholder="filter by name" ng-model="searchText.name"></div>
+    <div>Search by age: <input type="text" name="box3" placeholder="filter by age" ng-model="searchText.age"></div>
+    <div ng-init="lista =
+    [{'name':'JOHN', 'age':25}, 
+    {'name':'JESSIE', 'age':30}, 
+    {'name':'JOHANNA', 'age':28},  
+    {'name':'JOY', 'age':15},  
+    {'name':'MARY', 'age':28},  
+    {'name':'PETER', 'age':95},  
+    {'name':'SEBASTIAN', 'age':50},  
+    {'name':'ERIKA', 'age':27},  
+    {'name':'PATRICK', 'age':40}, 
+    {'name':'SAMANTHA', 'age':60} ]"></div>
+    <ul>
+        <li ng-repeat="i in lista | filter:searchText">{{[$index + 1]}} {{i.name}} who is {{i.age}} years old.</li>
+    </ul>
+
+</body>
+</html>

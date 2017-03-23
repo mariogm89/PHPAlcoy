@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <style type="text/css">
+        .yellow {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sunt quasi quidem nesciunt delectus reprehenderit eos praesentium magni adipisci officiis. Commodi sint soluta tenetur recusandae eligendi odio ipsam, numquam asperiores voluptatibus nam nesciunt praesentium, omnis a officia labore molestias, inventore accusamus sed delectus. Quod facere reprehenderit in? Error eveniet ea voluptatum adipisci tempore inventore libero ullam eos quibusdam necessitatibus, praesentium expedita illo, commodi iste quis id at nisi laudantium soluta fuga dolores asperiores. Voluptatem incidunt quos nulla vitae iste maiores corrupti, voluptatum, dolor molestiae, eligendi consequatur officiis veritatis. Quos ipsum id fugit suscipit ratione repellendus quod, odit dolorum nostrum, sint, mollitia.</p>
+    <p>Quibusdam repellat explicabo rem, vitae voluptates obcaecati incidunt quaerat accusantium cum dolore dicta. Dicta eum numquam, eius earum ex dolorem sint eveniet incidunt distinctio. Rerum consequuntur illum vitae ab nobis dignissimos, tenetur, culpa quas officia doloribus consectetur ipsa harum temporibus unde magni quae odio dolores laboriosam sit ipsam, velit vel saepe reiciendis. Incidunt ad explicabo ea modi quod nesciunt earum voluptate tempora minima magni, necessitatibus dolorum nisi itaque, voluptatum odit atque ratione iure error optio obcaecati omnis harum doloremque. Iure quod, ipsam et id aperiam dolorum perferendis non architecto, optio tempore, eos. Reiciendis iste consequuntur ex distinctio, accusantium et laborum tempora!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <p>Ipsum provident itaque voluptate veniam, temporibus obcaecati nemo fuga nobis iure atque, molestiae sequi voluptatem. </p>
+    <script>
+        var parrafo = $("p");
+        parrafo.each(addYellowClass);
+        function addYellowClass(){
+            var textop = $(this).text(); // .text devuleve el texto del contenido, en este caso es p
+            var longtext = textop.length; // crea una variable para la longitud del texto almacenado en la anterior variable
+                if(longtext>100){ // igual que el ejercicio 6, pero con un if
+                    $(this).addClass("yellow");
+                }
+        }
+    </script>
+</body>
+</html>
