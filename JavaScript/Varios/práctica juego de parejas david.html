@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			border: 1px solid gray;
+			display: inline-block;
+			width: 40px;
+			height: 60px;
+			margin: 5px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var num_parejas = prompt('¿Cuántas parejas quieres?');
+		// num_parejas = 5
+		var cartas = [];
+		for(var i = 1; i <= num_parejas; i++){
+			// cartas = [1,1,2,2,3,3,4,4,5,5]
+			// cartas[i] = i;
+			cartas.push(i,i);
+			var carta = document.createElement('div');
+			carta.innerHTML = i;
+			var carta2 = document.createElement('div');
+			carta2.innerHTML = i;
+			document.body.appendChild(carta);
+			document.body.appendChild(carta2);
+			/*Es lo mismo que arriba pero de otra forma.
+			for(var i = 1; i <= num_parejas; i++){
+				for(var j = 1; j<3; i++){
+				cartas.push (i);
+				var carta = document.createElement('div');
+				carta.innerHTML = i
+				document.body.appendChild(carta);
+				}
+				}*/
+		}
+		function desordenarCartas(){
+			primera = cartas.shift();
+			cartas.push(primera);
+		}
+
+
+	</script>
+</body>
+</html>

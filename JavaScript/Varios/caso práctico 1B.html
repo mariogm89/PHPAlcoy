@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Lista de textos:</h1>
+	<script type="text/javascript">
+		var ulist = document.createElement('ul');
+		var textuser = prompt("Introduce un texto.");
+		while(textuser != ""){
+			var lista = document.createElement('li');
+			var text = document.createTextNode(textuser);
+			lista.appendChild(text);
+			ulist.appendChild(lista);
+			textuser = prompt("Introduce otro dato. Para parar deja vacío el campo.");
+		}
+		document.body.appendChild(ulist);
+	</script>
+</body>
+</html>
