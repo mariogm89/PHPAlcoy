@@ -1,0 +1,60 @@
+header{
+	background: linear-gradient(blue, lightgrey);
+	padding-left: 20px;
+}
+header img{
+	width: 50px;
+	margin-top: 20px;
+}
+body{
+	background-color: lightgrey;
+	margin: 0px;
+}
+h1{
+	margin-top: 0px;
+}
+main{
+	float: left;
+	width: 75%;
+}
+main img{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+main p{
+	margin-top: 0px;
+	text-align: center;
+}
+table, th{
+	border: 1px solid black;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 8px;
+}
+table{
+	margin-left: 20px;
+}
+td.tabletitle{
+	text-align: right;
+}
+td.button{
+	text-align: right;
+}
+input{
+	height: 25px;
+}
+aside{
+	float: right;
+	width: 25%;
+}
+aside section{
+	margin-top: 30px;
+}
+footer{
+	text-align: center;
+	clear: both;
+	position: relative;
+	margin-bottom: 20px;
+}
