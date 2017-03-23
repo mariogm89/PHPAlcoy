@@ -1,0 +1,11 @@
+body {
+    background-color: #F5ECCE;
+}
+footer{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
