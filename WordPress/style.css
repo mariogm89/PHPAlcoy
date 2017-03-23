@@ -1,0 +1,26 @@
+/*
+Theme Name: MH Newsdesk Lite Child
+Theme URI: http://wordpress.org/themes/
+mh-newsdesk-lite
+Description: Example of mh-newsdesk-lite
+Author: Curso WP
+Author URI: http://talentumempleo.com/
+Template: mh-newsdesk-lite
+Version: 1.0.0
+*/
+@import url("../mh-newsdesk-lite/style.css");
+
+.miembros img {
+    margin-left: 35%;
+    width: 240px;
+}
+.miembros a {
+    text-align: center;
+}
+
+.list-center li {
+    text-align: center;
+}
+.list-center img{
+    width: 200px;
+}
