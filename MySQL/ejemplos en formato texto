@@ -1,0 +1,24 @@
+SELECT provincias.provincia AS Provincia, count(*) AS Municipios FROM `provincias`, municipios WHERE provincias.cod_prov = municipios.cod_prov group by provincias.provincia
+
+SELECT cod_prov, count(*) FROM `municipios` where municipio like 'a%' group by cod_prov
+
+SELECT provincias.provincia AS Provincia, count(*) AS `Total municipios por A` FROM `municipios`, `provincias` where provincias.cod_prov = municipios.cod_prov AND municipios.municipio like 'a%' group by provincias.provincia
+
+>> NO FUNCIONA >> SELECT provincias.provincia AS Provincia, count(*) FROM `municipios`, `provincias` where provincias.cod_prov = municipios.cod_prov AND municipios.municipio like '% campo' OR municipios.municipio like 'campo %' OR municipios.municipio like '% campo %' OR municipios.municipio like 'campo' group by provincias.provincia
+
+SELECT * FROM `municipios` WHERE municipios.municipio like '% campo' OR municipios.municipio like 'campo %' OR municipios.municipio like '% campo %' or municipios.municipio like 'campo'
+
+SELECT provincias.provincia AS Provincia, count(*) AS Municipios FROM `provincias`, `municipios` WHERE provincias.cod_prov = municipios.cod_prov group by provincias.provincia having count(municipios.municipio) > 100
+
+SELECT provincias.provincia, count(*) AS Municipios from provincias join municipios on (provincias.cod_prov = municipios.cod_prov) group by provincias.provincia having count(municipios.municipio) > 100
+
+INSERT INTO municipios(cod_muni, cod_prov, municipio)
+values('9180', '03', 'Hyrule')
+
+UPDATE municipios set cod_muni = 9181 where cod_muni = 9180
+UPDATE provincias set provincia = 'Alacant' where cod_prov = 03
+
+DELETE from municipios WHERE cod_muni = 9181
+
+DELETE from municipios
+WHERE municipio like '% campo %' OR municipio like '% campo' OR municipio like 'campo %' OR municipio like 'campo'
